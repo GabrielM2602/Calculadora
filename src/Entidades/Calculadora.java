@@ -5,6 +5,13 @@ public class Calculadora {
     private int num1;
     private int num2;
 
+    public Calculadora(){};
+
+    public Calculadora(int num1, int num2){
+        this.num1 = num1;
+        this.num2 = num2;
+    }   
+
     public int getNum1() {
         return num1;
     }
@@ -19,5 +26,15 @@ public class Calculadora {
 
     public void setNum2(int num2) {
         this.num2 = num2;
+    }
+
+    public int somar() {
+        int soma = num1 + num2;
+        return soma;
+    }
+  
+    @Override
+    public String toString() {
+        return "Calculadora [num1=" + num1 + ", num2=" + num2 + "]";
     }
 }
