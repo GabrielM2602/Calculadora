@@ -32,6 +32,21 @@ public class Calculadora {
         int soma = num1 + num2;
         return soma;
     }
+
+    public int subtrair(){
+        int sub = num1 - num2;
+        return sub;
+    }
+
+    public int multiplicar(){
+        int multi = num1 * num2;
+        return multi;
+    }
+
+    public double dividir(){
+        double div = num1 / num2;
+        return div;
+    }
   
     @Override
     public String toString() {
